@@ -1,4 +1,4 @@
-// Smooth scrolling for anchor links
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -9,7 +9,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Back to top button logic
 const backToTopButton = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
@@ -26,8 +25,6 @@ function scrollToTop() {
         behavior: 'smooth'
     });
 }
-
-// Optional: Fade in sections as they enter the viewport
 const sections = document.querySelectorAll("section");
 
 window.addEventListener("scroll", fadeInSections);
